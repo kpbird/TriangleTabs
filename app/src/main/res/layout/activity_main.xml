@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+    <com.kpbird.triangletabs.PagerSlidingTabStrip
+        android:id="@+id/activity_main_pagertabstrip"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        custom:pstsTextAllCaps="true"
+        custom:pstsIndicatorColor="#FF3F9FE0"
+        custom:pstsDividerColor="#FF3F9FE0"
+        custom:pstsUnderlineColor="#FF3F9FE0"
+        custom:pstsTriangleIndicator="true"
+        custom:pstsShouldExpand="true"
+        custom:pstsIndicatorHeight="15dp"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/activity_main_pager"
+        android:layout_below="@+id/activity_main_pagertabstrip"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"></android.support.v4.view.ViewPager>
+
+</RelativeLayout>
